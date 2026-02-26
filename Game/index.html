@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sandy Rush_Dev by Dheeshana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesmusic.css">
+</head>
+
+<body onload="startGame(); createBoxes();"  onkeypress="keyCheck(event);">
+    <!--Game Over Page-->
+    <div class="end" id="end">
+        <div class="yourScore">
+        Your Score 
+
+    </div>
+    <div class="endScore" id="endScore">
+        0 
+
+    </div>
+   <button class="btn" onclick="reload();">
+       🦀 Re-Play ?
+   </button>
+
+    
+
+    </div>
+    
+    
+    
+
+
+<!-- Game Audio -->
+<audio id="bgMusic" src="resources/music/sandy_rush_loop.m4a" loop></audio>
+
+    <!-- Intro Image -->
+    <div class="intro" id="intro">
+        <img src="resources/intro.png" alt="Intro Image" class="intro-img" id="introImg">
+    </div>
+
+    <div class="score" id="score">0</div>
+
+    <!-- Game Background -->
+    <div class="background" id="background">
+        <img src="resources/png/Idle (1).png" class="boy" id="boy">
+    </div>
+
+    
+
+    
+    <script src="scriptmusic.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
